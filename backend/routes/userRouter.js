@@ -1,4 +1,6 @@
 const express = require("express");
+const mongoose = require('mongoose');
+mongoose.set('strictQuery', false);
 const { UserModel } = require("../models/user.model");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
