@@ -6,14 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="index.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+        <link rel="shortcut icon" type="image/x-icon" href="./images/Untitled design.png">
   </head>
   <body>
     <div id="navbar">
       <div id="blackbar">
         <div id="blackbar1">
           <h4>
-            Have You Seen What's New? <a class="blackbar1a" href="">WOMEN</a>
-            <a class="blackbar1a" href="">MEN</a>
+            Have You Seen What's New?
+            <span class="blackbar1a">MEN</span>
+            <span class="blackbar1a">WOMEN</span>
+          
           </h4>
         </div>
 
@@ -22,51 +29,90 @@
         </div>
       </div>
 
-      <div id="nav2">
-        
+       <div id="nav2">
         <div id="nav2a">
-          <p>Free Shipping Orders $50 <a href="">Details</a></p>
+          <p>Free Shipping Orders $50
+            <span>Details</span></p>
         </div>
 
-        <div id="nav2b"><h1><a href="">Fashion Club</a></h1></div>
+        <div id="nav2b">
+          <a href=""><h1 style="margin-right:250px">Fashion Club</h1></a></div>
 
         <div id="nav2c">
           <div>
-            <a href="">
             <img
               src="https://www.1stopdesign.com/wp-content/uploads/2015/06/Search-Logos.png"
               alt=""
-            /></a>
+            />
           </div>
 
-          <div>
-            <a href="">
-            <img
+          <div class = "center">
+            <img id ="show-login"
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-QBaCgmJMTArP6E3KYOR6yN7LXXwXqCai5bGQqyCNyLEG_SapYTkGkDTmcVoDZXlQv-o&usqp=CAU"
               alt=""
-            /></a>
+            />
           </div>
 
+
+          <!-- ***** signin start*******-->
+
+          <div class="popup">
+            <div class="close-btn">&times;</div>
+            <div class="form">
+                <h2>Log In </h2>
+                <div class="form-element">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="Enter email">
+                </div>
+                <div class="form-element">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter password">
+                </div>
+
+                <div class="form-element">
+                    <!-- <input type="checkbox" id = "remember-me" "> -->
+                    <!-- <label for="remember-me">Remember me</label> -->
+                </div>
+
+                <div class="form-element">
+                    <button id="signin"> Sign in</button>
+                </div>
+                <div class="form-element">
+                    <a href="#">Forgot password?</a>
+                </div>
+                <div class="form-element">
+                    <a href="signup.html">Create Account</a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+          <!-- ***** signin end*******-->
+
           <div>
-            <a href="">
             <img
               src="https://cdn.onlinewebfonts.com/svg/img_290616.png"
               alt=""
-            /></a>
+            />
           </div>
         </div>
       </div>
 
       <div id="nav3">
         <div id="nav3a">
-          <div><h4> <a href="">WOMEN </a></h4></div>
-          <div><h4><a href="">MEN</a></h4></div>
-          <div><h4><a href="">JEANS</a></h4></div>
-          <div><h4><a href="">ICONS</a></h4></div>
-          <div><h4><a href="">SALE</a></h4></div>
-          <div><h4><a href="">STYLE TRIAL RENTAL</a></h4></div>
-          <div><h4><a href="">COMMUNITY</a></h4></div>
-          <div><h4><a href="">LABEL WE LOVE</a></h4></div>
+          <div><h4>WOMEN</h4></div>
+          <div><h4>MEN</h4></div>
+          <div><h4>JEANS</h4></div>
+          <div><h4>ICONS</h4></div>
+          <div><h4>SALE</h4></div>
+          <div><h4>STYLE TRIAL RENTAL</h4></div>
+          <div><h4>COMMUNITY</h4></div>
+          <div><h4>LABEL WE LOVE</h4></div>
         </div>
       </div>
     </div>
@@ -74,9 +120,10 @@
     <div id="main">
       <div id="banner1">
         <img
-          src="https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/7/25/9be788ff-39a4-4214-99d0-fc97505aae5a1658752545685-USPA_Desk_Banner.jpg"
+          src="pic.jpg"
           alt=""
         />
+        <!-- src="https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/7/25/9be788ff-39a4-4214-99d0-fc97505aae5a1658752545685-USPA_Desk_Banner.jpg" -->
       </div>
 
       <div id="row1">
@@ -85,7 +132,7 @@
             src="https://images.express.com/is/image/expressfashion/0097_09709440_2757_f001?cache=on&wid=361&fmt=jpeg&qlt=75,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon"
             alt=""
           />
-          <h4><a href="">WOMEN'S TOPS</a></h4>
+          <h4>WOMEN'S TOPS</h4>
         </div>
 
         <div>
@@ -93,7 +140,7 @@
             src="https://images.express.com/is/image/expressfashion/0039_03253915_0592_12_fb?cache=on&wid=960&fmt=jpeg&qlt=85,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon"
             alt=""
           />
-          <h4><a href=""></a>MEN'S SUITS</a></h4>
+          <h4>MEN'S SUITS</h4>
         </div>
 
         <div>
@@ -101,7 +148,7 @@
             src="https://images.express.com/is/image/expressfashion/0091_07191566_0018_f001?cache=on&wid=361&fmt=jpeg&qlt=75,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon"
             alt=""
           />
-          <h4><a href="">WOMEN'S JEANS</a></h4>
+          <h4>WOMEN'S JEANS</h4>
         </div>
 
         <div>
@@ -109,7 +156,7 @@
             src="https://images.express.com/is/image/expressfashion/0020_06037545_0001_a001?cache=on&wid=361&fmt=jpeg&qlt=75,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon"
             alt=""
           />
-          <h4><a href="">MEN'S SHIRTS</a></h4>
+          <h4>MEN'S SHIRTS</h4>
         </div>
 
         <div>
@@ -117,7 +164,7 @@
             src="https://images.express.com/is/image/expressfashion/0094_07907968_0001_f001?cache=on&wid=361&fmt=jpeg&qlt=75,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon"
             alt=""
           />
-          <h4><a href="">DRESSES</a></h4>
+          <h4>DRESSES</h4>
         </div>
 
         <div>
@@ -125,34 +172,289 @@
             src="https://images.express.com/is/image/expressfashion/0024_02847571_0018_f001?cache=on&wid=361&fmt=jpeg&qlt=75,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon"
             alt=""
           />
-          <h4><a href="">MEN'S JEANS</a></h4>
+          <h4>MEN'S JEANS</h4>
         </div>
       </div>
 
       <div id="new">
-        <h2><a href="">ALL NEW</h2>
+        <h2>ALL NEW</h2>
       </div>
 
-      <div id = "main2">
-        <div id  = "main2a">
+      <div id="main2">
+        <div id="main2a">
           <img
             src="https://www.express.com/content/dam/express/2023/projects/web/home-landing/01-january/0130-digital-21837-hp/dt/all-new-1-dg-dt.jpg"
-            
             alt=""
           />
-        </div>
-        <div id = "main2b">
-
-          
-
-
+          <div><p>Modern Tailoring</p></div>
         </div>
 
+        <div id="main2b">
+          <div id="main2ba">
+            <div>
+              <img
+                src="https://images.express.com/is/image/expressfashion/0078_06956983_2910_c100?cache=on&wid=361&fmt=jpeg&qlt=75,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon"
+                alt=""
+              />
+              <p>Outfit Inspo</p>
+              <a href="">Shop Now</a>
+            </div>
 
+            <div>
+              <img
+                src="https://images.express.com/is/image/expressfashion/0091_07021554_0020_c100?cache=on&wid=361&fmt=jpeg&qlt=75,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon"
+                alt=""
+              />
+
+              <p>Jeans</p>
+              <a href="">Shop Now</a>
+            </div>
+
+            <div>
+              <img
+                src="https://images.express.com/is/image/expressfashion/0094_07857713_0001_c100?cache=on&wid=361&fmt=jpeg&qlt=75,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon"
+                alt=""
+              />
+
+              <p>Bridal Edit</p>
+              <a href="">Shop Now</a>
+            </div>
+          </div>
+
+          <div id="main2bb">
+            <div>
+              <img
+                src="https://images.express.com/is/image/expressfashion/0022_04779555_2234?cache=on&wid=361&fmt=jpeg&qlt=75,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon"
+                alt=""
+              />
+
+              <p>Pima Cotton Tees</p>
+              <a href="">Shop Now</a>
+            </div>
+
+            <div>
+              <img
+                src="https://images.express.com/is/image/expressfashion/0037_06215298_2926_c100?cache=on&wid=361&fmt=jpeg&qlt=75,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon"
+                alt=""
+              />
+
+              <p>Jackets & Coats</p>
+              <a href="">Shop Now</a>
+            </div>
+
+            <div>
+              <img
+                src="https://images.express.com/is/image/expressfashion/0024_02756826_0098_c100?cache=on&wid=361&fmt=jpeg&qlt=75,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon"
+                alt=""
+              />
+
+              <p>Jeans</p>
+              <a href="">Shop Now</a>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+
+
+<div id = "main3">
+
+
+<div>
+  <img src="https://www.express.com/content/dam/express/2023/projects/web/site-experiences/02-february/0130-digital-21831-icons-lp/dt/mm-l-dt.jpg" alt="">
+</div>
+<div id = "main3a">
+  <div>
+    <h2>WOMEN</h2><br>
+    <a href="">PORTOFINO SHIRTS</a><br>
+    <a href="">DRESS PANTS</a><br>
+    <a href="">BODY CONTOUR</a><br>
+    <a href="">24/7 TOPS</a><br>
+  </div>
+<div>
+  <h2>MEN</h2><br>
+  <a href="">1 MX SHIRTS</a><br>
+    <a href="">MODERN TECH SUITS</a><br>
+    <a href="">HYPER STRETCH JEANS</a><br>
+    <a href="">PERFECT TEE</a><br>
+</div>
+
+
+
+
+</div>
+
+
+
+
+<div>
+  <img src="https://www.express.com/content/dam/express/2023/projects/web/site-experiences/02-february/0130-digital-21831-icons-lp/dt/mm-r-dt.jpg" alt="">
+</div>
+
+
+
+</div>
+    
+
+<div id = "main4">
+ 
+  <h1>SHOP THE EASY WAY</h1>
+
+
+  <div id = "main4a">
+
+    <div>
+
+<h2>Store Pickup</h2>
+<p>Buy online. Pick it up in store for free.</p>
+
+<a href="">Learn More</a>
+    </div>
+
+
+    <div>
+
+      <h2>Buy Now. Pay Later.</h2>
+      <p>4 interest-free payments.</p>
+      
+      <a href="">Learn More</a>
+          </div>
+
+          <div>
+
+            <h2>Express Credit Card</h2>
+            <p>Open and use for exclusive perks.</p>
+            
+            <a href="">Learn More</a>
+                </div>
+
+                <div>
+
+                  <h2>Express Credit Card</h2>
+                  <p>Connect with digital stylist.</p>
+                  
+                  <a href="">Learn More</a>
+                      </div>
+                                    
+  </div>
+
+
+
+</div>
+
+    </div> 
+
+    <!-- ************FOOTER************* -->
+
+
+    <div class="top8">
+      <div class="top8a">
+          <h1>Email Gift Cards</h1>
+          <p>Valid online and at any StyleStreet Inc. brand</p>
+          <button>BUY EMAIL GIFT CARD</button>
+      </div>
+      <div class="top8a">
+          <h1>Rewards Program</h1>
+          <p>Get free shipping, rewards, and more with FLX</p>
+          <button>FLX DETAILS</button>
+      </div>
+      <div class="top8a">
+          <h1>Sign Up For Emails</h1>
+          <p>Stay in the loop, wherever you go</p>
+          <button>SIGN UP FOR EMAILS</button>
+      </div>
+      <div class="top8a">
+          <h1>Mobile App</h1>
+          <p>Get ahead of the game with on-the-go shopping
+          </p>
+          <button>MOBILE APP DETAILS</button>
+      </div>
+  </div>
+
+
+
+
+  <div class="top9">
+      <div class="top9a">
+          <h1>Email Gift Cards</h1>
+          <hr>
+
+          <p> About Us</p>
+          <p> Accessibility Statement</p>
+          <p> Career Opportunities</p>
+          <p> Pages Sitemap</p>
+          <p> Products Sitemap 1</p>
+          <p> Products Sitemap 2</p>
+          <p> Products Sitemap 3</p>
+          <p> Privacy Statement</p>
+          <p> Do Not Sell</p>
+          <!-- <p> Limit the Use of my Sensitive Personal Data</p> --> 
+          <p> Ad Choices</p>
+          <p> Terms Of Use</p>
+          <!-- <img src="./images/od.gif" alt=""> -->
       </div>
 
 
 
-    </div>
+      <div class="top9a">
+          <h1>
+              CUSTOMER SERVICE</h1>
+          <hr>
+
+          <p> Contact Us</p>
+          <p> Ordering Help</p>
+          <p> Order Status</p>
+          <p> Shipping Info</p>
+          <p> Store Pick Up</p>
+          <p> Returns-Exchanges</p>
+          <p> Help </p>
+          <p> COVID-19 Information</p>
+          <p> Check Gift Card Balance</p>
+
+      </div>
+
+      <div class="top9a">
+          <h1>   QUICK LINKS </h1>
+          <hr>
+
+          <p> Store Locator</p>
+          <p> Text Sign Up</p>
+          <p> Launch 101</p>
+          <p> Klarna</p>
+          <p> Coupons</p>
+          <p> Affiliates</p>
+          <p> Fit Guarantee</p>
+          <p> Military Discount</p>
+          <p> Student Discount</p>
+          <p> Release Calendar</p>
+          <p> Start a Return/Exchange</p>
+
+      </div>
+      <div class="top9a">
+          <h1>
+              SOCIAL </h1>
+              <hr>
+              <div class="footer-icons">
+                  <a href="https://www.facebook.com/express" target="_blank" class="facebook-icon"><i
+                          class="fab fa-facebook-f"></i></a>
+                  <a href="https://twitter.com/express" target="_blank" class="twitter-icon"><i
+                          class="fab fa-twitter"></i></a>
+                  <a href="https://www.youtube.com/user/express" target="_blank" class="youtube-icon"><i
+                          class="fab fa-youtube"></i></a>
+                  <a href="http://www.instagram.com/express" target="_blank" class="instagram-icon"><i
+                          class="fab fa-instagram"></i></a>
+              </div>
+              <div class="google"><img src="https://www.footlocker.com/built/252/images/shared/ic_logo_AppStore.svg" alt="">
+                  <br><img src="https://www.footlocker.com/built/252/images/shared/ic_logo_GooglePlay.svg" alt="">
+                  <hr>
+                  <div ><p class="p_tag">  © 2023 StyleStreet.com, Inc. All Rights Reserved</p></div>
+              </div>
+          </div></div>
+      </div>
+  </div>
+
   </body>
 </html>
+<script src = "signin.js"></script>
