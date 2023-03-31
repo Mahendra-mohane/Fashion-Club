@@ -1,6 +1,12 @@
 const mongoose = require('mongoose');
-mongoose.set('strictQuery', false);
+
+const express=require("express");
+
+// mongoose.set('strictQuery', false);
+
 require("dotenv").config()
-const connection  = mongoose.connect(process.env.mongoURL)
+
+const connection  =async()=>{await mongoose.connect(process.env.mongoURL)
+}
 
 module.exports = {connection}

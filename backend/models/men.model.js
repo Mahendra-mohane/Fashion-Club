@@ -5,6 +5,8 @@ image:{type:String,required:true},
 title:{type:String,required:true},
 discount:{type:String,required:true},
 price:{type:Number,required:true}
+},{
+    versionKey:false
 })
 
 const MenModel = mongoose.model("men",menSchema)
