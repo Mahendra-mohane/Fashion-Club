@@ -1,0 +1,108 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+#main{
+      display:flex;
+      margin:auto;
+
+}
+#main>div:nth-child(1){
+    width:20%
+}
+#main>div:nth-child(2){
+    width:80%
+}
+#sort{
+    border:2px solid red
+}
+#main-container{
+    /* border:2px solid red; */
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+   
+    column-gap: 10px;
+    row-gap: 20px;
+    
+}
+#main-container>div{
+    border-radius: 14px;
+    width:90%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+}
+#main-container img{ 
+    width:100%;
+    margin:auto;
+    align-items:center;
+    display:block;
+  border-top-right-radius: 14px;
+  border-top-left-radius: 14px;
+    
+}
+
+
+#main-container p{
+    font-weight: 500;
+    font-size: 15px;
+    color:#cba992;
+    margin-left: 5px;
+    margin-top: 5px ;
+}
+#main-container button{
+    font-weight: 500;
+    font-size: 15px;
+    background-color:black ;
+    color:white;
+    border: 0px;
+    padding:6px;
+    border-radius: 5px;
+    display:block;
+    margin:auto;
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+#main-container button:hover{
+   background-color:  red;
+   cursor: pointer;
+}
+#main-container>div:hover{
+    border-radius: 14px;
+    width:90%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    
+  
+}
+
+#main-container h3{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 5px;
+    
+}
+
+
+#ban{
+    width:100%;
+    margin-bottom: 12px;
+}
+#ban img{
+    width:100%;
+    display:block;
+    margin:auto;
+}
+
+#sort>div{
+    margin-top: 13px;
+
+}
+#sort span{
+    font-weight: 600;
+    font-size:23px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+#sort select,option{
+  font-size:15px;
+  font-weight:600;
+  border:2px solid black
+}
