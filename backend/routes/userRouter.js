@@ -1,11 +1,12 @@
 const express = require("express");
-const mongoose = require('mongoose');
-mongoose.set('strictQuery', false);
+// const mongoose = require('mongoose');
+// mongoose.set('strictQuery', false);
+const userRouter = express.Router();
 const { UserModel } = require("../models/user.model");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 
-const userRouter = express.Router();
+
 
 // register user here
 
@@ -17,21 +18,21 @@ userRouter.post("/register", async (req, res) => {
 
 
   if(checkuser.length>0){
-    res.send({"msg":"User already exist, please login"})
+    res.send({msg:"User already exist, please login"})
   }
   else{
   try {
-    bcrypt.hash(pass, 5, async (err, hash) => {
+    bcrypt.hash(password, 5, async (err, hash) => {
       if (err) {
         res.send({ msg: "Something went wrong", error: err.message });
       } else {
-        const user = new UserModel({ name, email, pass: hash ,phone});
+        const user = new UserModel({ name, email, password: hash ,phone});
         await user.save();
-        res.send({ msg: "New Users has been registered" });
+        res.send({ "msg": "New Users has been registered" });
       }
     });
   } catch (err) {
-    res.send({ msg: "Something went wrong", error: err.message });
+    res.send({ "msg": "Something went wrong", error: err.message });
   }
 
 }
@@ -55,18 +56,19 @@ userRouter.post("/login", async (req, res) => {
 
         if (result) {
 
-          let token = jwt.sign({"userID":user[0]._id}, "mahendra");
+          let token = jwt.sign({"userID":user[0]._id}, "mahendra",{expiresIn:"3hr"});
+
           res.status(200).send({ "msg": "Logged in successfull ", "token": token });
         } else {
-          res.status(400).send({"msg":"Wrong Credentials"})
+          res.status(400).send({msg:"Wrong Credentials"})
         }
         
       });
     } else {
-      res.send("Wrong Credentials");
+      res.send({msg:"user not found"});
     }
   } catch (err) {
-    res.status(400).send({ "msg": "Something went wrong", error: err.message });
+    res.status(400).send({ msg: "Something went wrong", error: err.message });
   }
 });
 

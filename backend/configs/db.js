@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const express=require("express");
 
-mongoose.set('strictQuery', false);
+// mongoose.set('strictQuery', false);
 
 require("dotenv").config()
 
