@@ -1,45 +1,42 @@
-const express = require("express");
-require("dotenv").config()
-
-const connection = require("./configs/db") 
-
-const {userRouter} = require("./routes/userRouter")
-const {menRouter} = require("./routes/men.routes")
-const{cartRouter}=require("./routes/cart.routes")
-
-
-const {authenticate} = require("./middlewares/users.middleware")
-
-
-
-const cors = require("cors")
+const express = require("express")
+const { reg_routes, login_rout } = require("./routes/login")
 
 const app = express()
+
+const cors = require("cors");
+
 app.use(express.json())
 
+const { connection } = require("./conncetion")
+
+const { notes_post,womens,men, get_route,menid,womenid } = require("./routes/data")
+const auth = require("./miidelwar/postmiddleware")
 app.use(cors())
-app.use("/user",userRouter)
-app.use("/men",menRouter)
+app.use("/reg",reg_routes)
+app.use("/login",login_rout)
 
-// app.use("/womens",womenRouter)
-
-app.use(authenticate)
-app.use("/cart",cartRouter)
+app.use("/getkids",get_route)
+app.use("/kidid",notes_post)
 
 
+app.use("/getwomen",womens)
 
+app.use("/getmen",men)
 
-// server part//
+app.use("/menid",menid)
+app.use("/womenid",womenid)
 
-app.listen(process.env.port,async()=>{
+app.use(auth)
 
-    try{
-           await connection 
-        console.log(`Server is running at port ${process.env.port}`)
+app.use("/addkid",notes_post)
+app.use("/addwomen",womens)
+app.use("/addmen",men)
+app.use("/delbyid",get_route)
+app.listen(3000, () => {
+    try {
+        connection()
+    } catch (error) {
+        console.log(error);
     }
-    catch(err){
-        console.log(err.message)
-    }
-})
-
-
+});
+//http://localhost:3000/getkids?page=1&title=value&color=value&Brand=value
