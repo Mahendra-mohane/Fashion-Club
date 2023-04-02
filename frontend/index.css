@@ -90,13 +90,19 @@
       margin-top: 20px;
       margin-bottom: 20px;
       width:80%;
-  
-   
+      font-family:Arial, Helvetica, sans-serif
   }
+  #nav3a>div{
+    cursor:pointer
+}
   #nav3{
       border-top:2px solid #e8e8e8;
       border-bottom:2px solid #e8e8e8;
   }
+  #nav2c>div{
+    cursor:pointer
+}
+/* navbar here  */
   
   #banner1{
       display:flex;
@@ -329,524 +335,213 @@
   
   /* ***********footer*********** */
   
-  .top8 {
-      padding-top: 80px;
-      /* padding-left: 10px; */
-      /* padding-right: 10px; */
-      display: flex;
-      width: 100%;
-      margin: auto;
-      background-color: black;
-      color: white;
-      justify-content: space-evenly;
-      /* align-items: space-between; */
-  }
+
+
+.top9{
+    display: flex;
+    width: 100%;
+    color: black;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+.top9a>h1 {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.top9a p{
+    line-height: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#h1a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 12px;
+    font-size: 20px;
+}
+.footer-icons {
+    display: flex;
+    align-items: center;
+    margin-top:8px;
   
-  .top8a {
-      margin-left: 10px;
-      margin-right: 10px;
-      width: 22%;
   }
-  .top8>div:nth-child(3) button{
-      margin-top: 30px;
+
+  .footer-icons a{
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  .top8a>button:hover{
-      border-bottom: 4px solid white;
-      cursor: pointer;
+  .facebook-icon{
+    background-color: rgb(27, 120, 241);
+    text-decoration: none;
+  } 
+  .youtube-icon{
+    background-color: rgb(241, 27, 27);
+    text-decoration: none;
   }
-  .top8a>img{
-      width: 70px;
-      height: 70px;
-  }
-  .top8a>button {
-      width: 200px;
-      height: 50px;
-      font-family: Arial, Helvetica, sans-serif;
-      font-weight: 800;
-      color: white;
-      border: 1px solid white;
-      background-color: black;
-  }
-  
-  .top8a>h1 {
-      font-size: 30px;
-      font-weight: bold;
-  }
-  .top8a p{
-      line-height: 30px;
-  }
-  .top9{
-      padding-top: 80px;
-      /* padding-left: 30px; */
-      /* padding-right: 50px; */
-      display: flex;
-      width: 100%;
-      background-color: black;
-      color: white;
-      margin: auto;
-      justify-content: space-evenly;
-  }
-  .top9a {
-      margin-left: 10px;
-      margin-right: 10px;
-      width: 22%;
-      /* margin: auto; */
-  }
-  .top9a>h1 {
-      font-size: 20px;
-      font-weight: bold;
-  }
-  .top9a p{
-      line-height: 25px;
-  }
-  .footer-icons {
-      display: flex;
-      align-items: center;
-      margin-top:8px;
+   .twitter-icon{
+    background-color: rgb(87, 146, 224);
+    text-decoration: none;
+   } 
+   .instagram-icon{
+    background-color: rgb(241, 27, 173);
+    text-decoration: none;
+   }
+   .facebook-icon:hover{
+    color: rgb(27, 120, 241);
+    background-color: white;
+    cursor: pointer;
     
-    }
-    .footer-icons a{
-      color: #fff;
-      padding: 10px;
-      border-radius: 50%;
-      margin-right: 10px;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      text-align: center;
-      width: 35px;
-      height: 35px;
-      transition: 0.3s;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .facebook-icon{
-      background-color: rgb(27, 120, 241);
-      text-decoration: none;
-    } 
-    .youtube-icon{
-      background-color: rgb(241, 27, 27);
-      text-decoration: none;
-    }
-     .twitter-icon{
-      background-color: rgb(87, 146, 224);
-      text-decoration: none;
-     } 
-     .instagram-icon{
-      background-color: rgb(241, 27, 173);
-      text-decoration: none;
-     }
-     .facebook-icon:hover{
-      color: rgb(27, 120, 241);
-      background-color: white;
-      cursor: pointer;
-      
-    } 
-    .youtube-icon:hover{
-      color: rgb(241, 27, 27);
-      background-color: white;
-      cursor: pointer;
-    }
-    .twitter-icon:hover{
-      color: rgb(87, 146, 224);
-      background-color: white;
-      cursor: pointer;
-     
-     } 
-     .instagram-icon:hover{
-      color: rgb(241, 27, 173);
-      background-color: white;
-      cursor: pointer;
-     }
-     /* .footer-icons a:hover{
-      background-color: #555;
-      color: #fff;
-      text-decoration: none;
-    } */
-    .fab {
-      font-size: 20px;
-    }
-  .google>img{
-          height: 80px;
-          width: 140px;
+  } 
+  .youtube-icon:hover{
+    color: rgb(241, 27, 27);
+    background-color: white;
+    cursor: pointer;
   }
-  .suggestion-list{
-      color: rgb(91, 3, 3);
-      /* position: absolute; */
-      /* z-index: 1; */
-      list-style: none;
-      line-height: 40px;
-  
+  .twitter-icon:hover{
+    color: rgb(87, 146, 224);
+    background-color: white;
+    cursor: pointer;
+   
+   } 
+   .instagram-icon:hover{
+    color: rgb(241, 27, 173);
+    background-color: white;
+    cursor: pointer;
+   }
+
+  .fab {
+    font-size: 20px;
   }
-  .suggestion-list:hover{
-      cursor: pointer;
-  }
-  #search-suggestion{
-      position: absolute;
-      z-index: 10;
-      background-color: white;
-      width: 78%
-  
-  }
-  /* Media Qurey */
-  
-  @media all and (min-width:200px) and (max-width:1380px){
-      .middle{
-      font-size: 12px;
-      }
-  }
-  @media all and (min-width:200px) and (max-width:1150px){
-      .middle{
-      font-size: 12px;
-      }
-      #search-bar{
-       width:100%;
-      }
-       #search{
-          width:100%;
-          /* border:1px solid white; */
-      }
-      #right{
-         margin-left: 30px;
-      } 
-  }
-  
-  @media all and (min-width:200px) and (max-width:1150px){
-      .middle{
-      font-size: 8px;
-      }
-  }
-  @media all and (min-width:200px) and (max-width:900px){
-      .top1{
-          flex-direction: column;
-          align-items: center;
-      }
-      .top1>div:nth-child(1){
-          width:100%;
-          margin: auto;
-         padding-bottom: 20px;
-      }
-      .top1>div:nth-child(2){
-          width:100%;
-          margin: auto;
-          padding-bottom: 20px;
-      }
-      .main{
-          grid-template-columns: repeat(3,1fr);
-          
-      }
-     .second_main{
-      grid-template-columns: repeat(3,1fr);
-     }
-     .top5{
-      grid-template-columns: repeat(3,1fr);
-      margin-left: 30px;
-     }
-     .top8{
-      grid-template-columns: repeat(2,1fr);
-     }
-     .top8a{
-      margin-left: 30px;
-     }
-     .top9{
-      grid-template-columns: repeat(2,1fr);
-     }
-     .top9a{
-      margin-left: 40px;
-      font-size: 20px;
-      margin-top: 30px;
-     }
-  }  
-  
-  
-  @media all and (min-width:200px) and (max-width:600px){
-      .main{
-          grid-template-columns: repeat(2,1fr);
-          margin: auto;
-          width:230%;
-          font-size: 25px;
-      }
-     .second_main{
-      grid-template-columns: repeat(2,1fr);
-      margin: auto;
-      width:170%;
-      margin-left: 100px;
-     }
-     .navbar{
-      width:220%;
-     }
-     .top1{
-      width:220%;
-     }
-     .top2{
-      width:220%;
-     }
-     .top4{
-      flex-direction: column;
-     }
-     .top4-a{
-      width:200%;
-      font-size: 40px;
-      margin-top: 30px;
-     }
-     .top5{
-      width:230%;
-      grid-template-columns: repeat(2,1fr);
-     }
-     .top6{
-      flex-direction: column-reverse;
-      width:230%;
-     }
-     .botomm{
-      margin-top: 50px;
-      font-size: 40px;
-      text-align: center;
-     }
-     .top7{
-      grid-template-columns: repeat(1,1fr);
-      margin-top: 80px;
-      width:200%;
-      font-size: 50px;
-      margin-left: 50px;
-     }
-     .top7-a{
-      margin-top: 50px;
-     }
-     .top8{
-      grid-template-columns: repeat(1,1fr);
-      width:230%;
-      /* text-align: center; */
-     }
-     .top8a{
-      margin-left: 50px;
-      font-size: 30px;
-      margin-top: 20px;
-     }
-     .top8a>button{
-      width:90%;
-     padding: 0px  0px;
-     height: 120px;
-      font-size: 30px;
-    
-     }
-     .top9{
-      grid-template-columns: repeat(2,1fr);
-      width:230%;
-     }
-     .top9a{
-      margin-left: 40px;
-      font-size: 20px;
-     }
-  }
-  
-  @media all and (min-width:200px) and (max-width:310px){
-      .main{
-          grid-template-columns: repeat(1,1fr);
-          margin: auto;
-          width:360%;
-          font-size: 45px;
-         margin-left: 60px;
-         margin-top: 30px;
-      }
-     .second_main{
-      grid-template-columns: repeat(1,1fr);
-      margin: auto;
-     width:270%;
-     margin-left: 170px;
-     margin-top: 30px;
-     }
-     .navbar{
-      width:420%;
-     }
-     .top1{
-      width:420%;
-     }
-     .top2{
-      width:420%;
-     }
-     .top4{
-      flex-direction: column;
-      margin-left: 30px;
-     }
-     .top4-a{
-      width:300%;
-      font-size: 40px;
-      margin-top: 30px;
-    margin-left: 110px;
-     }
-     .top5{
-      width:300%;
-      grid-template-columns: repeat(1,1fr);
-      margin-left: 60px;
-     }
-     .top5>div>p{
-      font-size: 60px;
-     }
-     .tag{
-      margin-top: 100px;
-      font-size: 70px;
-      margin-left: 210px;
-  
-      width:140%;
-     }
-     .top6{
-      flex-direction: column-reverse;
-      width:300%;
-      margin-left: 110px;
-     }
-     .top7{
-      grid-template-columns: repeat(1,1fr);
-      margin-top: 80px;
-      width:300%;
-      font-size: 40px;
-      margin-left: 110px;
-     }
-     .top7-a{
-      margin-top: 50px;
-     }
-     .top8{
-      margin-left: 110px;
-      width:300%;
-     
-     }
-     .top8a{
-      width:300%;
-      margin-left: 50px;
-     font-size: 35px;
-      margin-top: 20px;
-     }
-     .top8a>button{
-      width:30%;
-     padding: 0px  0px;
-      font-size: 45px;
-      height: 120px;
-    
-     }
-     .top9{
-      grid-template-columns: repeat(1,1fr);
-      width:300%;
-      margin-left: 110px;
-      font-size: 40px;
-     }
-     .top9a{
-      margin-top: 50px;
-      margin-left: 80px;
-      font-size: 40px;
-     }
-     .p_tag{
-     font-size: 30px;
-     }
-  }
-  
-  
-  
-  
-  
-  /* ******** */
-  .popup {
-      position: absolute;
-      top: -150%;
-      left: 50%;
-      opacity: 0;
-      transform: translate(-50%, -50%) scale(1.25);
-      width: 380px;
-      padding: 20px 30px;
-      background: #fff;
-      box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
-      border-radius: 10px;
-      transition: top 0ms ease-in-out 200ms,
-          opacity 200ms ease-in-out 0ms,
-          transform 200ms ease-in-out 0ms;
-  }
-  
-  .popup.active {
-      top: 50%;
-      opacity: 1;
-      transform: translate(-50%, -50%) scale(1);
-      width: 380px;
-      transition: top 0ms ease-in-out 0ms,
-          opacity 200ms ease-in-out 0ms,
-          transform 200ms ease-in-out 0ms;
-  }
-  
-  
-  .popup .close-btn {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      width: 15px;
-      height: 15px;
-      background: #888;
-      color: #eee;
-      text-align: center;
-      line-height: 15px;
-      border-radius: 15px;
-      cursor: pointer;
-  }
-  
-  .popup .form h2 {
-      text-align: center;
-      color: #222;
-      margin: 10px 0px 20px;
-      font-size: 25px;
-  
-  }
-  
-  .popup .form .form-element {
-      margin: 15px 0px;
-  }
-  
-  .popup .form .form .form-element label {
-      font-size: 14px;
-      color: #222;
-  
-  }
-  
-  
-  .popup .form .form-element input[type="text"],
-  .popup .form .form-element input[type="password"] {
-  
-  
-      margin-top: 5px;
-      display: block;
-      width: 100%;
-      padding: 10px;
-      outline: none;
-      border: 1px solid #aaa;
-      border-radius: 5px;
-  }
-  
-  .popup .form .form-element input[type="checkbox"] {
-      margin-right: 5px;
-  
-  }
-  
-  .popup .form .form-element button {
-      width: 100%;
-      height: 40px;
-      border: none;
-      outline: none;
-      font-size: 16px;
-      background: #222;
-      color: #f5f5f5;
-      border-radius: 10px;
-      cursor: pointer;
-  }
-  
-  .popup .form .form-element a {
-      display: block;
-      text-align: right;
-      font-size: 15px;
-      color: #1a79ca;
-      text-decoration: none;
-      font-weight: 600;
-  
-  }
-  
-  
-  #show-login {
-      background-color: black;
-      color: white;
-      font-weight: 700;
-      font-size: medium;
-  }
+.google>img{
+        height: 80px;
+        width: 140px;
+}
+.suggestion-list{
+    color: rgb(91, 3, 3);
+    list-style: none;
+    line-height: 40px;
+
+}
+
+
+
+
+/* ******** */
+.popup {
+    position: absolute;
+    top: -150%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.25);
+    width: 380px;
+    padding: 20px 30px;
+    background: #fff;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    transition: top 0ms ease-in-out 200ms,
+        opacity 200ms ease-in-out 0ms,
+        transform 200ms ease-in-out 0ms;
+}
+
+.popup.active {
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    width: 380px;
+    transition: top 0ms ease-in-out 0ms,
+        opacity 200ms ease-in-out 0ms,
+        transform 200ms ease-in-out 0ms;
+}
+
+
+.popup .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    background: #888;
+    color: #eee;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.popup .form h2 {
+    text-align: center;
+    color: #222;
+    margin: 10px 0px 20px;
+    font-size: 25px;
+
+}
+
+.popup .form .form-element {
+    margin: 15px 0px;
+}
+
+.popup .form .form .form-element label {
+    font-size: 14px;
+    color: #222;
+
+}
+
+
+.popup .form .form-element input[type="text"],
+.popup .form .form-element input[type="password"] {
+
+
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+.popup .form .form-element input[type="checkbox"] {
+    margin-right: 5px;
+
+}
+
+.popup .form .form-element button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: #222;
+    color: #f5f5f5;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.popup .form .form-element a {
+    display: block;
+    text-align: right;
+    font-size: 15px;
+    color: #1a79ca;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+
+#show-login {
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    font-size: medium;
+}

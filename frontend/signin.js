@@ -30,7 +30,7 @@ function submitfunc() {
 
 function loginfunc(payload) {
   // need to fetch api here for log in ex.=  fetch("http://localhost:4017/users/login"//
-  fetch("", {
+  fetch("https://tiny-teal-pike-wig.cyclic.app/users/login", {
     method: "POST",
     headers: {
       "Content-type": "application/json",

@@ -5,7 +5,7 @@ window.addEventListener("load", () => {
 
 async function appenddata() {
   try {
-    let responsedata = await fetch("https://outrageous-cyan-overcoat.cyclic.app/carts/get",{
+    let responsedata = await fetch("https://tiny-teal-pike-wig.cyclic.app/carts/get",{
       headers:{
           "Authorization":localStorage.getItem("token")
       }
@@ -77,7 +77,7 @@ function append(data){
 
 async function decrement(id){
       console.log(id)
-  let responsedata = await fetch(`https://outrageous-cyan-overcoat.cyclic.app/carts/dec/${id}`,{
+  let responsedata = await fetch(`https://tiny-teal-pike-wig.cyclic.app/carts/dec/${id}`,{
       method:"PATCH",
       headers: {
           "Authorization":localStorage.getItem("token")
@@ -97,7 +97,7 @@ async function decrement(id){
 
 async function increment(id){
   console.log(id)
-let responsedata = await fetch(`https://outrageous-cyan-overcoat.cyclic.app/carts/inc/${id}`,{
+let responsedata = await fetch(`https://tiny-teal-pike-wig.cyclic.app/carts/inc/${id}`,{
   method:"PATCH",
   headers: {
       "Authorization":localStorage.getItem("token")
@@ -116,7 +116,7 @@ window.location.reload()
 
 async function removed(id){
 
-  let responsedata = await fetch(`https://outrageous-cyan-overcoat.cyclic.app/carts/delete/${id}`,{
+  let responsedata = await fetch(`https://tiny-teal-pike-wig.cyclic.app/carts/delete/${id}`,{
       method:"DELETE",
       headers: {
           "Authorization":localStorage.getItem("token")
