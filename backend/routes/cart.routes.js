@@ -2,6 +2,7 @@ const express = require("express");
 const { CartModel } = require("../models/cart.model");
 
 const cartRouter = express.Router();
+// add to cart here//
 
 cartRouter.post("/addtocart", async (req, res) => {
   try {
@@ -22,6 +23,7 @@ cartRouter.post("/addtocart", async (req, res) => {
   }
 });
 
+// geting from server//
 cartRouter.get("/get", async (req, res) => {
   const loginid = req.body.user;
   let data = await CartModel.find({ user: loginid });

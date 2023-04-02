@@ -3,6 +3,8 @@ const { MenModel } = require("../models/men.model");
 
 const menRouter = express.Router();
 
+// use to fill data in data base //
+
 menRouter.post("/create",async(req,res)=>{
     const payload = req.body;
     // let men = new MenModel(payload)
