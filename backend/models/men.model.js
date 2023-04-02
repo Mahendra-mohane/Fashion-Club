@@ -12,3 +12,4 @@ const MenModel = mongoose.model("men",menSchema)
 module.exports = {
     MenModel
 }
+// men details blueprint//

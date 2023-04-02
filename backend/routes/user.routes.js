@@ -5,6 +5,8 @@ const bcrypt = require("bcrypt");
 
 const userRouter = express.Router();
 
+// registeration here//
+
 userRouter.post("/register", async (req, res) => {
   const { name, email, password , phone} = req.body;
 

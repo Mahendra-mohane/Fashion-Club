@@ -1,6 +1,7 @@
 window.addEventListener("load", () => {
   appenddata();
 });
+// js of cart//
 
 
 async function appenddata() {
