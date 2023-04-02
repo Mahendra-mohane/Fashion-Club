@@ -22,7 +22,7 @@ async function getUserData(event) {
     // user register api need to fetch //
 
     
-    let responsedata = await fetch("https://tiny-teal-pike-wig.cyclic.app/users/register", {
+
       method: "POST",
       headers: {
         "Content-type": "application/json",

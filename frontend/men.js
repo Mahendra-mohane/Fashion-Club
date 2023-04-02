@@ -5,7 +5,7 @@ window.addEventListener("load", () => {
 async function appenddata() {
   try {
     // fetch data of mens/get here ex=  fetch("http://localhost:8080/mens/get")//
-    let responsedata = await fetch("https://tiny-teal-pike-wig.cyclic.app/mens/get");
+
 
     let data = await responsedata.json();
     let datatoappend = data;
@@ -41,8 +41,7 @@ function append(data) {
 function cart(elem,index){
     console.log(elem,index)
 }
-document.querySelector("#filter").addEventListener("change",myfilter)
-document.querySelector("#filterbyprice").addEventListener("change",filterit)
+
 
 function myfilter(){
   let selected = document.querySelector("#filter").value
@@ -54,22 +53,16 @@ function myfilter(){
    hightolow()
   }
 
-}
 
 async function lowtohigh(){
 
   // fetch api for filter ex=http://localhost:8080/mens/getbyprice?price=1//
   
-    let responsedata = await fetch("https://tiny-teal-pike-wig.cyclic.app/mens/getbyprice?price=1")
-  
-    let data = await responsedata.json()
-    append(data)
-   }
-  
+
   async function hightolow(){
     // fetch api for filter  ex=http://localhost:8080/mens/getbyprice?price=-1
 
-    let responsedata = await fetch("https://tiny-teal-pike-wig.cyclic.app/mens/getbyprice?price=-1")
+
   
     let data = await responsedata.json()
     append(data)
@@ -97,22 +90,14 @@ async function lowtohigh(){
     }
   
     filterfunc(a,b)
-  }
-  
-  async function filterfunc(a=0,b=200){
-   console.log(a,b)
-  //  api== `http://localhost:8080/mens/filteredprice?price=${a}&price=${b}`
-    let responsedata = await fetch(`https://tiny-teal-pike-wig.cyclic.app/mens/filteredprice?price=${a}&price=${b}`)
-  
-    let data = await responsedata.json()
-    append(data)
+
   }
 
   async function cart(payload,index){
     payload.quantity=1
        
     // api=="http://localhost:8080/carts/addtocart"
-  let responsedata = await fetch("https://tiny-teal-pike-wig.cyclic.app/carts/addtocart",{
+
 
   method:"POST",
   headers:{
@@ -126,15 +111,4 @@ async function lowtohigh(){
   
     alert(data.msg)
     console.log(data)
-  }
 
-  document.querySelector("#cart").addEventListener("click",opencart)
-
-  function opencart(){
-    window.location.href = "./cart.html"
-  }
-
-  document.querySelector("#mens").addEventListener("click",openmens)
-
-  function openmens(){
-    window.location.href = "./men.html"}
