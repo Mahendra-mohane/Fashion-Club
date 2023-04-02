@@ -22,7 +22,7 @@ async function getUserData(event) {
     // user register api need to fetch //
 
     
-    let responsedata = await fetch("", {
+
       method: "POST",
       headers: {
         "Content-type": "application/json",

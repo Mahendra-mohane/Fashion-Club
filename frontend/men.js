@@ -5,7 +5,7 @@ window.addEventListener("load", () => {
 async function appenddata() {
   try {
     // fetch data of mens/get here ex=  fetch("http://localhost:8080/mens/get")//
-    let responsedata = await fetch("");
+
 
     let data = await responsedata.json();
     let datatoappend = data;
@@ -43,8 +43,6 @@ function cart(elem,index){
 }
 
 
-document.querySelector("#filter").addEventListener("change",myfilter)
-
 function myfilter(){
   let selected = document.querySelector("#filter").value
 
@@ -56,31 +54,15 @@ function myfilter(){
   }
 
 
-
-
-}
-
-
-
-
-
 async function lowtohigh(){
 
   // fetch api for filter ex=http://localhost:8080/mens/getbyprice?price=1//
   
-    let responsedata = await fetch("")
-  
-    let data = await responsedata.json()
-    append(data)
-   
-  
-  }
-  
-  
+
   async function hightolow(){
     // fetch api for filter  ex=http://localhost:8080/mens/getbyprice?price=-1
 
-    let responsedata = await fetch("")
+
   
     let data = await responsedata.json()
     append(data)
@@ -108,31 +90,14 @@ async function lowtohigh(){
     }
   
     filterfunc(a,b)
-  
-  
-  }
-  
 
-
-
-
-  async function filterfunc(a=0,b=200){
-   console.log(a,b)
-  //  api== `http://localhost:8080/mens/filteredprice?price=${a}&price=${b}`
-    let responsedata = await fetch(``)
-  
-    let data = await responsedata.json()
-    append(data)
- 
-   
-  
   }
 
   async function cart(payload,index){
     payload.quantity=1
        
     // api=="http://localhost:8080/carts/addtocart"
-  let responsedata = await fetch("",{
+
 
   method:"POST",
   headers:{
@@ -147,5 +112,3 @@ async function lowtohigh(){
     alert(data.msg)
     console.log(data)
 
-
-  }

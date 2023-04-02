@@ -1,7 +1,4 @@
-*{
-    margin: 0px;
-    padding:0px;
-}
+
 #main{
       display:flex;
       margin:auto;
@@ -13,9 +10,7 @@
 #main>div:nth-child(2){
     width:80%
 }
-#sort{
-    border:2px solid red
-}
+
 #main-container{
     /* border:2px solid red; */
     display:grid;
@@ -108,7 +103,3 @@
 }
 
 
-#sort1 select{
-    font-size: 16px;
-/* border:10px solid green*/
-}
