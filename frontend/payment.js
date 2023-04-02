@@ -6,7 +6,7 @@ let total = +totalprice
 document.querySelector("#see").innerText = `$${total+5}.00`
 document.querySelector("#seep").innerText = `$${total}.00`
 function makepayment(){
-    // alert(`Purchase of $${total+5} Successful` here)
+    // alert(`Purchase of $${total+5} Successful` )
     window.location.href = "./thank.html"
 }
  
