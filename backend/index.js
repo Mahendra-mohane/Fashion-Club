@@ -28,6 +28,3 @@ app.listen(process.env.port,async()=>{
         console.log(err.message)
     }
 })
-
-
-// backend driver
