@@ -16,10 +16,12 @@ app.use("/users",userRouter)
 app.use("/mens",menRouter)
 app.use(authenticate)
 app.use("/carts",cartRouter)
-app.listen(process.env.port,async()=>{
 
-    try{
-           await connection 
+
+
+app.listen(process.env.port,async()=>{
+ try{
+     await connection 
         console.log(`Server is running at port ${process.env.port}`)
     }
     catch(err){
